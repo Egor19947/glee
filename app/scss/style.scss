@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -190,7 +191,112 @@
   &__list-item4::after{
     display: none;
   }
-} 
+}
+
+.slider-top{
+  background-color: #fcd7b6;
+  padding-bottom: 45px;
+  &__container{
+    max-width: 1310px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item{
+    padding-left: 50px;
+  }
+  &__title{
+    @extend %rubik-500;
+    padding-top: 220px;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    max-width: 415px;
+  }
+  &__text{
+    max-width: 365px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-top: 35px;
+  }
+  &__link{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    @extend %rubik-500;
+    background-color: $btn;
+    padding: 22px 100px 22px 25px;
+    margin-top: 60px;
+    margin-bottom: 175px;
+    position: relative;
+  }
+  &__link::after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/arrow.svg");
+    width: 22px;
+    height: 9px;
+    right: 18px;
+    top: 23px;
+  }
+  &__img{
+    z-index: 10;
+    position: relative;
+    padding-top: 290px;
+    margin-right: 110px;
+  }
+  &__img-before{
+    position: relative;
+  }
+  &__img-before::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(-90deg, #fff, transparent);
+    width: 634px;
+    height: 634px;
+    border-radius: 50%;
+    top: 100px;
+    right: 0;
+  }
+}
+
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  li{
+    margin-right: 13px;
+    button{
+      padding: 0;
+      border: none;
+      font-size: 15px;
+      line-height: 0.8;
+      @extend %rubik-500;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.302;
+      color: #708088;
+    }
+    &.slick-active{
+      background-color: #fff;
+      border-radius: 50%;
+      button{
+        color: #243f4d;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
 
   
 
