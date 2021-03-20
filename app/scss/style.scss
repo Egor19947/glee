@@ -194,18 +194,18 @@
 }
 
 .slider-top{
-  background-color: #fcd7b6;
-  padding-bottom: 45px;
   &__container{
-    max-width: 1310px;
+    max-width: 1800px;
+    background-color: #fcd7b6;
+    margin: 0 auto;
+    padding-bottom: 45px;
   }
   &__wrapper{
+    max-width: 1310px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  &__item{
-    padding-left: 50px;
   }
   &__title{
     @extend %rubik-500;
@@ -281,6 +281,7 @@
       background-color: #fff;
       opacity: 0.302;
       color: #708088;
+      cursor: pointer;
     }
     &.slick-active{
       background-color: #fff;
@@ -292,6 +293,83 @@
     }
   }
 }
+
+.info{
+  &__container{
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  &__inner{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    padding-left: 76px;
+    position: relative;
+  }
+  &__item::before{
+    content: "";
+    position: absolute;
+    width: 51px;
+    height: 53px;
+    background-image: url(../images/icons/24.svg);
+    left: 0;
+    top: 45px;
+  }
+  &__item:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 36px;
+    background-image: url(../images/icons/car.svg
+    );
+    left: 0;
+    top: 55px;
+  }
+  &__item:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 52px;
+    background-image: url(../images/icons/card.svg);
+    left: 0;
+  }
+  &__item:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 170px;
+    background-color: #e8e4df;
+    top: 0;
+    right: -150px;
+  }
+  &__item:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 170px;
+    background-color: #e8e4df;
+    top: 0;
+    right: -150px;
+  }
+  &__item-title{
+    color: #414141;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 35px;
+    @extend %dmsans-700;
+  }
+  &__item-text{
+    max-width: 220px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+    margin-bottom: 35px;
+    @extend %dmsans-400;
+  }
+}
+
 
 
 
