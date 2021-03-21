@@ -27,3 +27,9 @@ body{
   padding: 0 15px;
 }
 
+.title{
+  text-align: center;
+  color: $title;
+  font-size: 36px;
+  @extend %dmsans-700;
+}

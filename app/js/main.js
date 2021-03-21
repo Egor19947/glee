@@ -4,6 +4,12 @@ $(function(){
     dots: true,
     arrows: false,
     fade: true
-  })
+  });
+
+
+
+
+  
+  var mixer = mixitup('.design__items');
     
 });
