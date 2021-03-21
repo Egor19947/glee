@@ -357,6 +357,7 @@
   &__filter{
     display: flex;
     justify-content: center;
+    margin: 35px 0 80px;
   }
   &__items{
     display: grid;
@@ -368,15 +369,18 @@
     height: 240px;
     max-width: 370px;
     background-position: center right;
+    border-radius: 4px;
   }
   &__filter-btn{
     border: none;
     background-color: transparent;
     line-height: auto;
     color: #8b8b8b;
-    margin: 35px 0 80px;
     padding: 0 15px;
     @extend %dmsans-700;
+  }
+  .mixitup-control-active{
+    color: $title;
   }
   &__item-title,
   .design__item-subtitle{
@@ -410,18 +414,134 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__link{
+}
+
+.product{
+  padding-top: 73px;
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    min-height: 380px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__item:hover{
+    .product__user{
+      transform: translateY(0);
+    }
+  }
+  &__item-img{
+    margin-top: auto;
+  }
+  &__item-title{
+    color: #243f4d;
+    font-size: 16px;
+    margin-top: 60px;
+    @extend %dmsans-500;
+  }
+  &__item-price{
+    color: $btn;
+    font-size: 16px;
+    margin-bottom: 35px;
+    @extend %dmsans-700;
+  }
+  &__user{
+    position: absolute;
+    bottom: 155px;
+    transform: translateY(3000%);
+    transition: all .5s;
+  }
+  &__user-link + .product__user-link{
+    margin-left: 16px;
+  }
+  &__user-link svg{
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 13px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all .4s;
+  }
+  .product__user-link svg:hover{
+    background-color: $btn;
+    path{
+      fill: #fff;
+    }
   }
 }
 
+.product-bottom{
+  padding-top: 185px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    display: flex;
+    background-color: #feefe2;
+    max-width: 865px;
+    padding-right: 148px;
+    padding-bottom: 85px;
+  }
+  &__content{
+    margin-left: 17px;
+  }
+  &__content--second{
+    margin-left: 65px;
+  }
+  &__item-img{
+    margin: -100px 0 0 140px;
+  }
+  &__item-title{
+    font-size: 26px;
+    line-height: 32px;
+    color: #243f4d;
+    margin-top: 100px;
+    max-width: 260px;
+    @extend %dmsans-700;
+  }
+  &__item-title--second{
+    margin-top: 90px;
+  }
+  &__item-text{
+    max-width: 330px;
+    font-size: 16px;
+    color: #243f4d;
+    margin: 30px 0 40px;
+  }
+  &__item-text--second{
+    margin-top: 20px;
+  }
+  &__item-link{
+    font-size: 15px;
+    color: #436372;
+    padding: 20px 85px 20px 20px;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    @extend %rubik-500;
+    position: relative;
+  }
+  &__item-link::after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/black-arrow.svg");
+    width: 22px;
+    height: 9px;
+    right: 20px;
+    top: 25px;
+  }
+}
 
-
-
-
-
-
-
-  
 
 
 
