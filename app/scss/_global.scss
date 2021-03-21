@@ -23,5 +23,13 @@ body{
 
 .container2{
   max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
+.title{
+  text-align: center;
+  color: $title;
+  font-size: 36px;
+  @extend %dmsans-700;
+}
