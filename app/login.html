@@ -60,42 +60,42 @@
     </div>
   </header>
   <main class="main">
-    <section class="main-login">
-      <div class="login">
-        <div class="container">
-          <h2 class="login__title">Log in</h2>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Log in</a>
-              </li>
-            </ul>
-          </div>
+    <section class="login">
+      <div class="login__inner">
+        <h2 class="login__title">Log in</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Log in</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="container">
         <form class="login-form" action="#">
-          <label class="login__label">
+          <label class="login-form__label">
             Username or email address *
-            <input class="login__input" type="text" required>
+            <input class="login-form__input" type="text" required>
           </label>
-          <label class="login__label">
+          <label class="login-form__label">
             Password *
-            <input class="login__input" type="password" required>
+            <input class="login-form__input" type="password" required>
           </label>
           <button class="login-form__btn" type="submit">Login</button>
-          <label class="login__label">
-            <input type="checkbox">
-            Remember me
-          </label>
-          <a class="login-form__link" href="#">Lost your password?</a>
-          <p class="login-form-text">
+          <div class="login-form__box">
+            <label class="login-form__label">
+              <input type="checkbox">
+              Remember me
+            </label>
+            <a class="login-form__link" href="#">Lost your password?</a>
+          </div>
+          <p class="login-form__text">
             Not registered? No problem
           </p>
-          <a href="#">Create an account</a>
+          <a class="login-form__linkbtn" href="#">Create an account</a>
         </form>
       </div>
     </section>
