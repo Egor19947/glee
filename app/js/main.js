@@ -1,5 +1,11 @@
 $(function(){
 
+  $('.user-nav__link4').on('click', function() {
+    $('.shop-content__items').toggleClass('shop-content__items--list')
+  })
+
+
+
   $('.filter-price__input').ionRangeSlider({
     type: 'double',
     step: 0.01,
@@ -23,7 +29,16 @@ $(function(){
     starWidth: "11px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
-    readOnly: true
+    readOnly: true,
+    spacing: "7px"
+  });
+
+  $(".product__stars").rateYo({
+    starWidth: "16px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "10px"
   });
 
 
