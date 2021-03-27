@@ -796,6 +796,7 @@
 
 .shop__wrapper {
   margin: 120px 0;
+  display: flex;
 }
 
 .shop-filter {
@@ -808,8 +809,8 @@
     margin-bottom: 28px;
     @extend %dmsans-700;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       width: 38px;
       height: 3px;
@@ -818,9 +819,9 @@
       left: 110px;
     }
   }
-  &__box{
+  &__box {
     position: relative;
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       width: 5px;
@@ -833,7 +834,7 @@
 }
 
 .filter-category {
-  &__form{
+  &__form {
     margin-bottom: 60px;
   }
   &__input {
@@ -841,7 +842,7 @@
     height: 1px;
     clip: rect(0 0 0 0);
     position: absolute;
-    &:checked + .filter-category__radio{
+    &:checked + .filter-category__radio {
       background-color: #edf1f4;
     }
   }
@@ -864,25 +865,24 @@
   }
 }
 
-.filter-price{
-  &__title{
-    &::after{
+.filter-price {
+  &__title {
+    &::after {
       left: 65px;
     }
   }
-  &__label{
+  &__label {
     display: flex;
     justify-content: space-between;
   }
   &__from,
-  &__to{
+  &__to {
     font-size: 14px;
     line-height: 14px;
     color: #243f4d;
     margin-left: -3px;
   }
 }
-
 
 //фильтр цены
 .irs--flat .irs-line {
@@ -902,43 +902,46 @@
   height: 15px;
   background-color: $btn;
 }
-.irs--flat .irs-handle>i:first-child{
+.irs--flat .irs-handle > i:first-child {
   display: none;
 }
-.irs--flat .irs-min, .irs--flat .irs-max {
+.irs--flat .irs-min,
+.irs--flat .irs-max {
   display: none;
 }
-.irs-from, .irs-to, .irs-single{
+.irs-from,
+.irs-to,
+.irs-single {
   display: none;
 }
 .irs--flat {
   height: 25px;
 }
 
-.filter-shop{
-  &__item{
+.filter-shop {
+  &__item {
     margin-bottom: 10px;
   }
 }
 
-.brand-filter{
+.brand-filter {
   margin: 80px 0 50px;
-  &__title{
+  &__title {
     margin-bottom: 25px;
-    &::after{
+    &::after {
       left: 75px;
     }
   }
-  &__input{
+  &__input {
     width: 1px;
     height: 1px;
     clip: rect(0 0 0 0);
     position: absolute;
-    &:checked + .brand-filter__checkbox{
+    &:checked + .brand-filter__checkbox {
       background-color: #edf1f4;
     }
   }
-  &__checkbox{
+  &__checkbox {
     width: 270px;
     height: 43px;
     background-color: transparent;
@@ -947,41 +950,41 @@
     left: 0;
     cursor: pointer;
   }
-  &__name-box{
+  &__name-box {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 270px;
   }
   &__name,
-  &__num{
+  &__num {
     color: #243f4d;
     line-height: 16px;
     position: relative;
     z-index: 100;
     padding-top: 15px;
   }
-  &__name{
+  &__name {
     padding-left: 15px;
   }
-  &__num{
+  &__num {
     padding-right: 23px;
   }
 }
 
-.recent{
-  &__title{
-    &::after{
+.recent {
+  &__title {
+    &::after {
       left: 180px;
     }
   }
-  &__item{
+  &__item {
     display: flex;
-    & + .recent__item{
+    & + .recent__item {
       margin-top: 23px;
     }
   }
-  &__img-box{
+  &__img-box {
     width: 70px;
     height: 70px;
     border: 2px solid #f2f2f2;
@@ -990,27 +993,64 @@
     align-items: center;
     margin-right: 20px;
   }
-  &__img{
+  &__img {
     object-fit: cover;
   }
-  &__name{
+  &__name {
     font-size: 14px;
     color: #333333;
     @extend %rubik-400;
   }
-  &__price{
+  &__price {
     color: #333333;
     font-size: 15px;
     @extend %rubik-400;
   }
 }
 
-.jq-ry-container{
+.jq-ry-container {
   padding: 0;
 }
 
+.product__user-link svg:hover {
+  background-color: $btn;
+  path {
+    fill: #fff;
+  }
+}
 
+.shop-content{
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-gap: 40px 30px;
+  }
+  margin-left: 30px;
+}
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  &__link{
+    color: #243f4d;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 108px;
+    &:last-child{
+      width: 74px;
+    }
+  }
+  &__link--active{
+    background-color: $btn;
+    color: #fff;
+  }
+}
 
 
 
