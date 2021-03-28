@@ -1,11 +1,5 @@
 $(function(){
 
-  $('.user-nav__link4').on('click', function() {
-    $('.shop-content__items').toggleClass('shop-content__items--list')
-  })
-
-
-
   $('.filter-price__input').ionRangeSlider({
     type: 'double',
     step: 0.01,
