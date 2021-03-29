@@ -1,8 +1,14 @@
 $(function(){
 
+  $('.shop-list__btn').on("click", function () {
+    $('.shop-list__link-box').toggleClass('shop-list__link-box--active');
+  })
+
+
   $('.filter-price__input').ionRangeSlider({
     type: 'double',
     step: 0.01,
+    type: "double",
     onStart: function (data){
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
@@ -27,12 +33,12 @@ $(function(){
     spacing: "7px"
   });
 
-  $(".product__stars").rateYo({
+  $(".shop-list__stars").rateYo({
     starWidth: "16px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
-    spacing: "10px"
+    spacing: "11px"
   });
 
 
