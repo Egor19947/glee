@@ -1114,6 +1114,40 @@
   }
 }
 
+.terms{
+  &__inner{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 115px 15px 60px;
+  }
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    color: #243f4d;
+  }
+  &__list{
+    margin: 27px 0 73px;
+    padding-left: 30px;
+  }
+  &__item{
+    color: #243f4d;
+    list-style: decimal-leading-zero;
+    & + .terms__item{
+      margin-top: 30px;
+    }
+  }
+  &__box{
+    & + .terms__box{
+      margin-top: 68px;
+    }
+  }
+  &__text{
+    margin-top: 27px;
+    color: #243f4d;
+  }
+}
+
+
 
 
 
