@@ -9,6 +9,7 @@
   padding: 75px 0 70px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid #dae4e9;
   &__item {
     max-width: 270px;
@@ -36,6 +37,7 @@
     padding-top: 15px;
     margin-bottom: 17px;
     text-transform: uppercase;
+    pointer-events: none;
   }
   &__text {
     margin-bottom: 35px;
@@ -97,5 +99,53 @@
   }
   &__link{
     color: #8d8d8d;
+  }
+}
+
+@media (max-width: 880px){
+  .footer-top__item{
+    margin: 0 23px;
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+    &__list{
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .footer-top{
+    display: block;
+    &__title{
+      pointer-events: auto;
+    }
+    &__list{
+      display: none;
+    }
+  }
+  .footer-bottom{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 460px){
+  .footer-top{
+    &__title{
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+    .form{
+      display: block;
+    }
+    &__input{
+      max-width: 270px;
+    }
+    &__btn{
+      width: 100%;
+      max-width: 270px;
+      height: 40px;
+      margin-top: 10px;
+    }
   }
 }

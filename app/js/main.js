@@ -1,5 +1,13 @@
 $(function(){
 
+  $('.footer-top__title').on('click', function(){
+    $(this).next().slideToggle();
+  })
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  })
+
   $('.related-products__slide').slick({
     slidesToShow: 4,
     infinite: false
