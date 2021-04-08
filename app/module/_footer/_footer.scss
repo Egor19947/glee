@@ -1,0 +1,151 @@
+.footer {
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-top {
+  padding: 75px 0 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dae4e9;
+  &__item {
+    max-width: 270px;
+  }
+  &__item1 {
+    max-width: 205px;
+  }
+  &__link {
+    display: block;
+    line-height: 32px;
+    font-size: 14px;
+    color: #7b7b7b;
+  }
+  &__link-contact {
+    margin-bottom: 10px;
+  }
+  &__adress {
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044;
+    padding-top: 15px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    pointer-events: none;
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  &__input {
+    border: none;
+    max-width: 170px;
+    width: 100%;
+    font-size: 12px;
+    background-color: $bg;
+    color: #234969;
+    @extend %dmsans-400;
+    line-height: 38px;
+    padding: 0 16px;
+  }
+  &__btn {
+    border: none;
+    background-color: $btn;
+    @extend %dmsans-400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    padding: 3px 0 4px;
+    max-width: 100px;
+    width: 100%;
+  }
+}
+.form {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0 40px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #7b7b7b;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .footer-bottom__list-item {
+    margin-left: 30px;
+  }
+  &__list-item {
+    position: relative;
+  }
+  &__list-item::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 17px;
+    background-color: #7b7b7b;
+    top: 6px;
+    right: -16px;
+  }
+  &__list-item4::after {
+    display: none;
+  }
+  &__link{
+    color: #8d8d8d;
+  }
+}
+
+@media (max-width: 880px){
+  .footer-top__item{
+    margin: 0 23px;
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+    &__list{
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .footer-top{
+    display: block;
+    &__title{
+      pointer-events: auto;
+    }
+    &__list{
+      display: none;
+    }
+  }
+  .footer-bottom{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 460px){
+  .footer-top{
+    &__title{
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+    .form{
+      display: block;
+    }
+    &__input{
+      max-width: 270px;
+    }
+    &__btn{
+      width: 100%;
+      max-width: 270px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  }
+}

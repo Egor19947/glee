@@ -1,0 +1,121 @@
+.design {
+  padding: 95px 0 55px;
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 80px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 120px;
+  }
+  &__item {
+    height: 240px;
+    max-width: 370px;
+    background-position: center right;
+    border-radius: 4px;
+  }
+  &__filter-btn {
+    border: none;
+    background-color: transparent;
+    line-height: auto;
+    color: #8b8b8b;
+    padding: 0 15px;
+    @extend %dmsans-700;
+  }
+  .mixitup-control-active {
+    color: $title;
+  }
+  &__item-title,
+  .design__item-subtitle {
+    color: $title;
+    font-size: 20px;
+    padding-left: 37px;
+    line-height: 20px;
+    @extend %dmsans-700;
+  }
+  &__item-title {
+    padding-top: 40px;
+    margin-bottom: 10px;
+  }
+  &__item-style {
+    color: $btn;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 37px;
+    margin-top: 18px;
+    @extend %dmsans-700;
+  }
+}
+
+.design-popup {
+  background-image: url("../images/popup-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px){
+  .design{
+    &__items{
+      grid-template-columns: 1fr 1fr;
+    }
+    &__item{
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+@media (max-width: 810px){
+  .design{
+    &__items{
+      grid-template-columns: 1fr;
+    }
+    &__item{
+      max-width: 600px;
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .design{
+    padding-top: 60px;
+    &__items{
+      grid-gap: 15px;
+      margin-bottom: 60px;
+    }
+    &__item{
+      background-image: none !important;
+    }
+    &__item-link{
+      display: block;
+      min-height: 140px;
+    }
+    &__item{
+      height: 100%;
+    }
+    &__item-title{
+      padding-top: 25px;
+    }
+    &__item-style{
+      display: block;
+      padding-bottom: 20px;
+    }
+    &__filter{
+      flex-wrap: wrap;
+      margin: 20px 0 35px;
+    }
+  }
+  .design-popup{
+    height: 270px;
+  }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="stylesheet" href="css/shop-page2.min.css">
+</head>
+
+<body>
+  
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+    <section class="shop-list">
+      <div class="login__inner">
+        <h2 class="login__title">Product list 2</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Product list 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="shop-list__wrapper">
+          <div class="shop-filter">
+            <div class="filter-category">
+              <h4 class="shop-filter__title">CATEGORY</h4>
+              <form class="filter-category__form" action="#">
+                <div class="shop-filter__box">
+                  <label class="filter-category__label">
+                    <span class="filter-category__name">Chair</span>
+                    <input class="filter-category__input" type="radio" name="furniture">
+                    <span class="filter-category__radio"></span>
+                  </label>
+                </div>
+                <div class="shop-filter__box">
+                  <label class="filter-category__label">
+                    <span class="filter-category__name">Table</span>
+                    <input class="filter-category__input" type="radio" name="furniture">
+                    <span class="filter-category__radio"></span>
+                  </label>
+                </div>
+                <div class="shop-filter__box">
+                  <label class="filter-category__label">
+                    <span class="filter-category__name">Lamp</span>
+                    <input class="filter-category__input" type="radio" name="furniture">
+                    <span class="filter-category__radio"></span>
+                  </label>
+                </div>
+                <div class="shop-filter__box">
+                  <label class="filter-category__label">
+                    <span class="filter-category__name">Watch</span>
+                    <input class="filter-category__input" type="radio" name="furniture">
+                    <span class="filter-category__radio"></span>
+                  </label>
+                </div>
+                <div class="shop-filter__box">
+                  <label class="filter-category__label">
+                    <span class="filter-category__name">Clock</span>
+                    <input class="filter-category__input" type="radio" name="furniture">
+                    <span class="filter-category__radio"></span>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="filter-price">
+              <h4 class="shop-filter__title filter-price__title">PRICE</h4>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0.00" data-max="900.00" data-from="100.00"
+                  data-to="500.00">
+                <label class="filter-price__label">
+                  <div class="filter-price__num">
+                    $
+                    <span class="filter-price__from"></span>
+                  </div>
+                  <div class="filter-price__num">
+                    $
+                    <span class="filter-price__to"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="brand-filter">
+              <h4 class="shop-filter__title brand-filter__title">BRAND</h4>
+              <form class="brand-filter__form" action="#">
+                <div class="filter-shop__item">
+                  <label class="brand-filter__label">
+                    <div class="brand-filter__name-box">
+                      <span class="brand-filter__name">RFL</span>
+                      <span class="brand-filter__num">(10)</span>
+                    </div>
+                    <input class="brand-filter__input" type="checkbox">
+                    <span class="brand-filter__checkbox"></span>
+                  </label>
+                </div>
+                <div class="filter-shop__item">
+                  <label class="brand-filter__label">
+                    <div class="brand-filter__name-box">
+                      <span class="brand-filter__name">Brothers</span>
+                      <span class="brand-filter__num">(21)</span>
+                    </div>
+                    <input class="brand-filter__input" type="checkbox">
+                    <span class="brand-filter__checkbox"></span>
+                  </label>
+                </div>
+                <div class="filter-shop__item">
+                  <label class="brand-filter__label">
+                    <div class="brand-filter__name-box">
+                      <span class="brand-filter__name">Regal</span>
+                      <span class="brand-filter__num">(3)</span>
+                    </div>
+                    <input class="brand-filter__input" type="checkbox">
+                    <span class="brand-filter__checkbox"></span>
+                  </label>
+                </div>
+                <div class="filter-shop__item">
+                  <label class="brand-filter__label">
+                    <div class="brand-filter__name-box">
+                      <span class="brand-filter__name">Nadia</span>
+                      <span class="brand-filter__num">(14)</span>
+                    </div>
+                    <input class="brand-filter__input" type="checkbox">
+                    <span class="brand-filter__checkbox"></span>
+                  </label>
+                </div>
+                <div class="filter-shop__item">
+                  <label class="brand-filter__label">
+                    <div class="brand-filter__name-box">
+                      <span class="brand-filter__name">Otobi</span>
+                      <span class="brand-filter__num">(6)</span>
+                    </div>
+                    <input class="brand-filter__input" type="checkbox">
+                    <span class="brand-filter__checkbox"></span>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="recent">
+              <h4 class="shop-filter__title recent__title">RECENT PRODUCTS</h4>
+              <div class="recent__items">
+                <a class="recent__item" href="#">
+                  <div class="recent__img-box">
+                    <img class="recent__img" src="images/recent/1.png" alt="recent product">
+                  </div>
+                  <div class="recent__content">
+                    <h5 class="recent__name">Pendant lamp</h5>
+                    <div class="stars" data-rateyo-rating="4"></div>
+                    <div class="recent__price">23$</div>
+                  </div>
+                </a>
+                <a class="recent__item" href="#">
+                  <div class="recent__img-box">
+                    <img class="recent__img" src="images/recent/2.png" alt="recent product">
+                  </div>
+                  <div class="recent__content">
+                    <h5 class="recent__name">Pendant lamp</h5>
+                    <div class="stars" data-rateyo-rating="4"></div>
+                    <div class="recent__price">23$</div>
+                  </div>
+                </a>
+                <a class="recent__item" href="#">
+                  <div class="recent__img-box">
+                    <img class="recent__img" src="images/recent/3.png" alt="recent product">
+                  </div>
+                  <div class="recent__content">
+                    <h5 class="recent__name">Pendant lamp</h5>
+                    <div class="stars" data-rateyo-rating="4"></div>
+                    <div class="recent__price">23$</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="shop-list__items">
+            <div class="shop-list__item">
+              <div class="shop-list__img-box">
+                <img class="shop-list__img" src="images/product-big/1.png" alt="furniture picture">
+              </div>
+              <div class="shop-list__content">
+                <h3 class="shop-list__title">Wooden radio</h3>
+                <div class="shop-list__stars" data-rateyo-rating="4"></div>
+                <div class="shop-list__price">23$</div>
+                <p class="shop-list__text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim
+                  ad minim
+                  veniam, quis nostrud exercitation
+                </p>
+                <div class="shop-list__link-box">
+                  <div class="shop-list__links">
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M1119.81,1325.63h2.34l3.32,12.04a0.816,0.816,0,0,0,.79.59h10.21a0.827,0.827,0,0,0,.75-0.48l3.71-8.56a0.829,0.829,0,0,0-.06-0.78,0.819,0.819,0,0,0-.68-0.37H1128.9a0.82,0.82,0,0,0,0,1.64h10.04l-3.01,6.92h-9.06l-3.33-12.03a0.8,0.8,0,0,0-.78-0.6h-2.95A0.815,0.815,0,0,0,1119.81,1325.63Zm5.67,18.37a1.85,1.85,0,1,0-1.84-1.85A1.852,1.852,0,0,0,1125.48,1344Zm11.53,0h0.14a1.867,1.867,0,0,0,1.71-1.99A1.845,1.845,0,1,0,1137.01,1344Z"
+                          transform="translate(-1119 -1324)" />
+                      </svg>
+                    </a>
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                          transform="translate(-861 -1564)" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-list__item">
+              <div class="shop-list__img-box">
+                <img class="shop-list__img" src="images/product-big/2.png" alt="furniture picture">
+              </div>
+              <div class="shop-list__content">
+                <h3 class="shop-list__title">Wooden radio</h3>
+                <div class="shop-list__stars" data-rateyo-rating="4"></div>
+                <div class="shop-list__price">23$</div>
+                <p class="shop-list__text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim
+                  ad minim
+                  veniam, quis nostrud exercitation
+                </p>
+                <div class="shop-list__link-box">
+                  <div class="shop-list__links">
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M1119.81,1325.63h2.34l3.32,12.04a0.816,0.816,0,0,0,.79.59h10.21a0.827,0.827,0,0,0,.75-0.48l3.71-8.56a0.829,0.829,0,0,0-.06-0.78,0.819,0.819,0,0,0-.68-0.37H1128.9a0.82,0.82,0,0,0,0,1.64h10.04l-3.01,6.92h-9.06l-3.33-12.03a0.8,0.8,0,0,0-.78-0.6h-2.95A0.815,0.815,0,0,0,1119.81,1325.63Zm5.67,18.37a1.85,1.85,0,1,0-1.84-1.85A1.852,1.852,0,0,0,1125.48,1344Zm11.53,0h0.14a1.867,1.867,0,0,0,1.71-1.99A1.845,1.845,0,1,0,1137.01,1344Z"
+                          transform="translate(-1119 -1324)" />
+                      </svg>
+                    </a>
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                          transform="translate(-861 -1564)" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-list__item">
+              <div class="shop-list__img-box">
+                <img class="shop-list__img" src="images/product-big/3.png" alt="furniture picture">
+              </div>
+              <div class="shop-list__content">
+                <h3 class="shop-list__title">Wooden radio</h3>
+                <div class="shop-list__stars" data-rateyo-rating="4"></div>
+                <div class="shop-list__price">23$</div>
+                <p class="shop-list__text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim
+                  ad minim
+                  veniam, quis nostrud exercitation
+                </p>
+                <div class="shop-list__link-box">
+                  <div class="shop-list__links">
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M1119.81,1325.63h2.34l3.32,12.04a0.816,0.816,0,0,0,.79.59h10.21a0.827,0.827,0,0,0,.75-0.48l3.71-8.56a0.829,0.829,0,0,0-.06-0.78,0.819,0.819,0,0,0-.68-0.37H1128.9a0.82,0.82,0,0,0,0,1.64h10.04l-3.01,6.92h-9.06l-3.33-12.03a0.8,0.8,0,0,0-.78-0.6h-2.95A0.815,0.815,0,0,0,1119.81,1325.63Zm5.67,18.37a1.85,1.85,0,1,0-1.84-1.85A1.852,1.852,0,0,0,1125.48,1344Zm11.53,0h0.14a1.867,1.867,0,0,0,1.71-1.99A1.845,1.845,0,1,0,1137.01,1344Z"
+                          transform="translate(-1119 -1324)" />
+                      </svg>
+                    </a>
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                          transform="translate(-861 -1564)" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-list__item">
+              <div class="shop-list__img-box">
+                <img class="shop-list__img" src="images/product-big/4.png" alt="furniture picture">
+              </div>
+              <div class="shop-list__content">
+                <h3 class="shop-list__title">Wooden radio</h3>
+                <div class="shop-list__stars" data-rateyo-rating="4"></div>
+                <div class="shop-list__price">23$</div>
+                <p class="shop-list__text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim
+                  ad minim
+                  veniam, quis nostrud exercitation
+                </p>
+                <div class="shop-list__link-box">
+                  <div class="shop-list__links">
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M1119.81,1325.63h2.34l3.32,12.04a0.816,0.816,0,0,0,.79.59h10.21a0.827,0.827,0,0,0,.75-0.48l3.71-8.56a0.829,0.829,0,0,0-.06-0.78,0.819,0.819,0,0,0-.68-0.37H1128.9a0.82,0.82,0,0,0,0,1.64h10.04l-3.01,6.92h-9.06l-3.33-12.03a0.8,0.8,0,0,0-.78-0.6h-2.95A0.815,0.815,0,0,0,1119.81,1325.63Zm5.67,18.37a1.85,1.85,0,1,0-1.84-1.85A1.852,1.852,0,0,0,1125.48,1344Zm11.53,0h0.14a1.867,1.867,0,0,0,1.71-1.99A1.845,1.845,0,1,0,1137.01,1344Z"
+                          transform="translate(-1119 -1324)" />
+                      </svg>
+                    </a>
+                    <a class="shop-list__link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #a3bbc8;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1"
+                          d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                          transform="translate(-861 -1564)" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="partners login-partners">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img class="partner__item-img" src="images/partners/1.png" alt="partner logo">
+        </li>
+        <li class="partners__item">
+          <img class="partner__item-img" src="images/partners/2.png" alt="partner logo">
+        </li>
+        <li class="partners__item">
+          <img class="partner__item-img" src="images/partners/3.png" alt="partner logo">
+        </li>
+        <li class="partners__item">
+          <img class="partner__item-img" src="images/partners/4.png" alt="partner logo">
+        </li>
+        <li class="partners__item">
+          <img class="partner__item-img" src="images/partners/5.png" alt="partner logo">
+        </li>
+      </ul>
+    </div>
+  </main>
+  
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

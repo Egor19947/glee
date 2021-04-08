@@ -1,5 +1,26 @@
 $(function(){
 
+  $('.footer-top__title').on('click', function(){
+    $(this).next().slideToggle();
+  })
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  })
+
+  $('.related-products__slide').slick({
+    slidesToShow: 4,
+    infinite: false
+  })
+
+  $('.detalis-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.detalis-tabs__top-item').removeClass('detalis-tabs__top-item--active');
+    $(this).addClass('detalis-tabs__top-item--active');
+    $('.detalis-tabs__content-item').removeClass('detalis-tabs__content-item--active');
+    $($(this).attr('href')).addClass('detalis-tabs__content-item--active');
+  })
+
   $('.detalis__input').styler();
 
   $('.detalis-slide__small').slick({
