@@ -76,6 +76,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    flex-wrap: wrap;
   }
   &__item {
     @extend %rubik-400;
@@ -1319,19 +1320,5 @@
   width: 500px;
   height: 335px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import "media";

@@ -1,6 +1,6 @@
 $(function(){
 
-  $('.footer-top__title').on('click', function(){
+  $('.footer-top__title--slide').on('click', function(){
     $(this).next().slideToggle();
   })
 
@@ -81,7 +81,26 @@ $(function(){
 
 
 
-  var mixer = mixitup('.product__items');
-  var mixer = mixitup('.design__items');
-    
+  // var mixer = mixitup('.product__items');
+  // var mixer = mixitup('.design__items');
+
+  const mixin1 = document.querySelector(".product__items");
+  const mixin2 = document.querySelector(".design__items");
+
+  if (mixin1) {
+    mixitup('.product__items', {
+      selectors: {
+        control: '.filter'
+      }
+    })
+  }
+
+  if (mixin1) {
+    mixitup('.design__items', {
+      selectors: {
+        control: '.filter2'
+      }
+    })
+  }
+
 });
