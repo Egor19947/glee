@@ -398,6 +398,8 @@
   .about{
     &__inner{
       background-image: none;
+      margin-top: 0;
+      height: auto;
     }
     &__content{
       margin-left: 0;
@@ -483,6 +485,9 @@
       margin: 0 47px;
       margin-bottom: 20px;
     }
+  }
+  .team{
+    padding-top: 60px;
   }
 }
 
