@@ -281,6 +281,17 @@
 .shop-filter {
   max-width: 270px;
   position: relative;
+  &__btn{
+    width: 120px;
+    position: absolute;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $btn;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+  }
   &__title {
     font-size: 18px;
     color: #243f4d;
