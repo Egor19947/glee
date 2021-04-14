@@ -1,0 +1,303 @@
+@media (max-width: 1220px){
+  .shop-filter{
+    transform: translateX(-2000%);
+    position: absolute;
+    background-color: #fff;
+    z-index: 435;
+    max-width: 400px;
+    width: 100%;
+    padding-right: 20px;
+    transition: all .3s;
+    &.shop-filter--active{
+      transform: translateX(0);
+    }
+    &__btn{
+      display: block;
+      right: 15px;
+      top: 325px;
+      z-index: 2;
+    }
+  }
+  .shop-content{
+    margin-left: 0;
+    width: 100%;
+    &__items{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .filter-category{
+    &__radio{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .blog-page{
+    &__inner{
+      flex-direction: column;
+    }
+    &__aside{
+      order: -1;
+      max-width: 100%;
+    }
+    &__form-input{
+      width: 100%;
+    }
+    &__content{
+      max-width: 100%;
+    }
+    &__item-img{
+      width: 100%;
+      height: auto;
+    }
+    .filter-category{
+      display: none;
+    }
+    .recent-posts{
+      display: none;
+    }
+  }
+  .comments{
+    &__item{
+      &::after{
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+  .your-comment{
+    &__wrapper{
+      width: 49%;
+    }
+  }
+  .contact-wrapper{
+    &__items{
+      display: block;
+    }
+    &__item{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    &__info{
+      display: block;
+    }
+    &__form{
+      max-width: 100%;
+    }
+    &__box{
+      width: 100%;
+      max-width: 100%;
+      &:first-child{
+        margin-right: 15px;
+      }
+    }
+    &__input{
+      max-width: 100%;
+    }
+    #map{
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .detalis-item{
+    &__inner{
+      display: block;
+    }
+  }
+  .detalis{
+    &__content{
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .detalis-tabs{
+    &__top{
+      margin-left: 0;
+    }
+    &__top-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      & + .detalis-tabs__top-item{
+        margin-left: 0;
+      }
+    }
+  }
+  .shop-content{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .shop-list{
+    &__item{
+      display: block;
+      margin-left: 0;
+      & + .shop-list__item{
+        margin-top: 55px;
+      }
+    }
+    &__content{
+      margin-left: 0;
+      max-width: 100%;
+    }
+    &__title{
+      margin-top: 35px;
+    }
+    &__price{
+      margin-top: 20px;
+    }
+    &__text{
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 880px){
+  .related-products .product__item-box{
+    max-width: 97%;
+  }
+  .related-products .product__item{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px){
+  .detalis-slide{
+    &__small{
+      display: none;
+    }
+    &__big{
+      width: 100%;
+    }
+  }
+  .related-products .slick-arrow{
+    top: -50px;
+  }
+  .related-products .slick-prev{
+    left: 15px;
+    right: auto;
+  }
+  .related-products .slick-next{
+    left: 85px;
+    right: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .shop-content{
+    &__items{
+      grid-template-columns: 1fr;
+    }
+  }
+  .shop-filter{
+    max-width: 300px;
+    &__btn{
+      top: 365px;
+    }
+  }
+}
+
+@media (max-width: 530px){
+  .blog-page{
+    &__inner{
+      margin: 60px 0;
+    }
+    &__item-box{
+      margin-top: -49px;
+      padding: 10px 20px 9px 10px;
+    }
+  }
+  .blog-one{
+    &__author{
+      display: block;
+    }
+    &__author-img{
+      display: none;
+    }
+    blockquote{
+      padding: 10px 15px 15px 20px;
+    }
+  }
+  .comments{
+    &__img{
+      display: none;
+    }
+    &__item{
+      &::after{
+        left: 0;
+      }
+    }
+    &__item--answer{
+      padding-left: 45px;
+    }
+  }
+  .your-comment{
+    &__box{
+      display: block;
+    }
+    &__wrapper{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__input{
+      width: 100%;
+    }
+    &__textarea{
+      margin-top: 0;
+    }
+  }
+  .partners{
+    &__item{
+      margin: 15px 30px;
+    }
+  }
+  .detalis-slide{
+    &__big-item{
+      height: 430px;
+      img{
+        height: 424px;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .detalis{
+    &__btn{
+      display: block;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .shop-list{
+    &__img-box{
+      width: auto;
+      height: 410px;
+    }
+  }
+}
+
+@media (max-width: 380px){
+  .comments{
+    &__info{
+      display: block;
+    }
+  }
+  #map{
+    height: 250px;
+  }
+  .shop-filter{
+    max-width: 285px;
+  }
+}
+

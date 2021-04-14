@@ -217,6 +217,15 @@
     &__items{
       grid-template-columns: 1fr;
     }
+    &__wrapper{
+      display: block;
+    }
+    &__link{
+      margin-top: 25px;
+      &::after{
+        left: 70px;
+      }
+    }
   }
   .partners{
     &__item{
